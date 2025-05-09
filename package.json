@@ -1,11 +1,19 @@
 {
     "name": "@yeeroen/use-bem",
     "type": "module",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "private": false,
     "description": "A simple BEM utility for TypeScript",
     "author": "Jeroen van Egmond",
-    "license": "MIT",
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://github.com/yeeroen/use-bem#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yeeroen/use-bem.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yeeroen/use-bem/issues"
+    },
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
