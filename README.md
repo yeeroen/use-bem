@@ -1,5 +1,10 @@
 # @yeeroen/use-bem
 
+[![npm version](https://img.shields.io/npm/v/@yeeroen/use-bem.svg)](https://www.npmjs.com/package/@yeeroen/use-bem)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg)](https://www.typescriptlang.org/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/yeeroen/use-bem/ci.yml?branch=master)](https://github.com/yeeroen/use-bem/actions)
+
 A lightweight utility for generating BEM (Block Element Modifier) class names in TypeScript/JavaScript.
 
 ## Installation
