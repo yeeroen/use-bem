@@ -1,7 +1,7 @@
 {
     "name": "@yeeroen/use-bem",
     "type": "module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "private": false,
     "description": "A simple BEM utility for TypeScript",
     "author": "Jeroen van Egmond",
@@ -16,15 +16,15 @@
     },
     "exports": {
         ".": {
-            "types": "./dist/index.d.ts",
-            "default": "./dist/index.js"
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
         }
     },
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.mts",
     "scripts": {
-        "build": "vite build",
+        "build": "tsdown",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "test": "vitest"
@@ -32,9 +32,8 @@
     "devDependencies": {
         "@antfu/eslint-config": "^4.13.0",
         "eslint-plugin-format": "^1.0.1",
+        "tsdown": "^0.20.3",
         "typescript": "~5.8.3",
-        "vite": "^6.3.5",
-        "vite-plugin-dts": "^3.9.1",
         "vitest": "^3.1.3"
     }
 }
