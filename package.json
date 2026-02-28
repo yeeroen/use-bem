@@ -32,7 +32,8 @@
         "build": "tsdown",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "test": "vitest"
+        "test": "vitest",
+        "prepublishOnly": "npm run build"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^4.13.0",
