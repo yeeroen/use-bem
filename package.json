@@ -1,7 +1,7 @@
 {
     "name": "@yeeroen/use-bem",
     "type": "module",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "private": false,
     "description": "A simple BEM utility for TypeScript",
     "author": "Jeroen van Egmond",
