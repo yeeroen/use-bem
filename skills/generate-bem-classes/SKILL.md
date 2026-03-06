@@ -123,10 +123,10 @@ Wrong:
 
 ```tsx
 function MyComponent({ variant }: Props) {
-  // Agent treats useBem as a hook and avoids calling it conditionally
-  const { block, modifier } = useBem('my-component')
+    // Agent treats useBem as a hook and avoids calling it conditionally
+    const { block, modifier } = useBem('my-component')
 
-  // Agent refuses to call useBem inside a condition, thinking it violates hook rules
+    // Agent refuses to call useBem inside a condition, thinking it violates hook rules
 }
 ```
 
@@ -137,7 +137,7 @@ Correct:
 const { block, modifier } = useBem('my-component')
 
 if (needsOther) {
-  const other = useBem('other-component')
+    const other = useBem('other-component')
 }
 ```
 
@@ -194,8 +194,8 @@ Correct:
 
 ```typescript
 const { block, element, modifier } = useBem('button')
-block(modifier('primary', true))   // ['button', 'button--primary']
-element('icon')                     // ['button__icon']
+block(modifier('primary', true)) // ['button', 'button--primary']
+element('icon') // ['button__icon']
 ```
 
 BEM uses double-dash (`--`) for modifiers and double-underscore (`__`) for elements. The library enforces these separators automatically.

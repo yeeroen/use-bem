@@ -23,13 +23,16 @@
     "main": "./dist/index.mjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.mts",
+    "bin": {
+        "intent": "./bin/intent.js"
+    },
     "files": [
+        "!skills/_artifacts",
         "LICENSE",
         "README.md",
-        "dist",
-        "skills",
         "bin",
-        "!skills/_artifacts"
+        "dist",
+        "skills"
     ],
     "scripts": {
         "build": "tsdown",
@@ -45,8 +48,5 @@
         "tsdown": "^0.20.3",
         "typescript": "~5.8.3",
         "vitest": "^3.1.3"
-    },
-    "bin": {
-        "intent": "./bin/intent.js"
     }
 }

@@ -10,5 +10,7 @@ export default antfu({
     lessOpinionated: true,
     ignores: [
         '.github/workflows/*.yml',
+        'skills/_artifacts/**',
+        'bin/**',
     ],
 })
