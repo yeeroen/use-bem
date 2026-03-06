@@ -1,7 +1,7 @@
 {
     "name": "@yeeroen/use-bem",
     "type": "module",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "private": false,
     "description": "A simple BEM utility for TypeScript",
     "author": "Jeroen van Egmond",
@@ -23,10 +23,16 @@
     "main": "./dist/index.mjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.mts",
+    "bin": {
+        "intent": "./bin/intent.js"
+    },
     "files": [
+        "!skills/_artifacts",
         "LICENSE",
         "README.md",
-        "dist"
+        "bin",
+        "dist",
+        "skills"
     ],
     "scripts": {
         "build": "tsdown",
@@ -37,6 +43,7 @@
     },
     "devDependencies": {
         "@antfu/eslint-config": "^4.13.0",
+        "@tanstack/intent": "^0.0.12",
         "eslint-plugin-format": "^1.0.1",
         "tsdown": "^0.20.3",
         "typescript": "~5.8.3",

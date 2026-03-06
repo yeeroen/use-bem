@@ -32,3 +32,7 @@ element(
     modifier('color', 'red')
 ) // ['button__icon', 'button__icon--color-red']
 ```
+
+## AI Agent Support
+
+If you use an AI coding agent, run `npx @tanstack/intent install` to load library-specific skills that help your agent generate correct BEM class names with this library.

@@ -1,0 +1,27 @@
+# skills/_artifacts/skill_tree.yaml
+library:
+  name: '@yeeroen/use-bem'
+  version: '1.0.4'
+  repository: 'https://github.com/yeeroen/use-bem'
+  description: 'A lightweight TypeScript utility that generates BEM class name arrays from block, element, and modifier inputs.'
+generated_from:
+  domain_map: 'skills/_artifacts/domain_map.yaml'
+  skill_spec: 'skills/_artifacts/skill_spec.md'
+generated_at: '2026-03-06'
+
+skills:
+  - name: 'Generate BEM Classes'
+    slug: 'generate-bem-classes'
+    type: 'core'
+    domain: 'bem-class-generation'
+    path: 'skills/generate-bem-classes/SKILL.md'
+    description: >
+      Using useBem() to produce BEM class name arrays when building component
+      templates. Covers block(), element(), modifier() with boolean, string,
+      number, and key-only values. Primary use case is Vue :class bindings
+      but works in any framework. Returns string[], not string.
+    requires: []
+    sources:
+      - 'yeeroen/use-bem:src/use-bem.ts'
+      - 'yeeroen/use-bem:src/types.ts'
+      - 'yeeroen/use-bem:README.md'
