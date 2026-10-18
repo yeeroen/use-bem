@@ -9,7 +9,7 @@
     "homepage": "https://github.com/yeeroen/use-bem#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yeeroen/use-bem.git"
+        "url": "git+https://github.com/yeeroen/use-bem.git"
     },
     "bugs": {
         "url": "https://github.com/yeeroen/use-bem/issues"
@@ -24,7 +24,7 @@
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.mts",
     "bin": {
-        "intent": "./bin/intent.js"
+        "intent": "bin/intent.js"
     },
     "files": [
         "!skills/_artifacts",
